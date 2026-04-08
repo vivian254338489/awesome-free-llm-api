@@ -1,0 +1,25 @@
+{
+  "categories": [
+    {
+      "id": "free-tier",
+      "name": "Free Tier APIs",
+      "description": "Providers offering legitimate free tiers with official API access. Includes platforms with free quotas, trial credits, and promotional offerings."
+    },
+    {
+      "id": "openai-compatible",
+      "name": "OpenAI-Compatible APIs",
+      "description": "API gateways and services that provide OpenAI-compatible endpoints. These allow easy migration and integration for developers familiar with the OpenAI API format."
+    },
+    {
+      "id": "self-hosted",
+      "name": "Self-Hosted / Open Source",
+      "description": "Open-source models and self-hostable solutions that run on your own infrastructure. Provides full control over data and configuration."
+    },
+    {
+      "id": "experimental",
+      "name": "Experimental / Daily Free Access",
+      "description": "Providers offering experimental features or daily free access as promotional offerings. Terms and availability may change frequently."
+    }
+  ],
+  "category_ids": ["free-tier", "openai-compatible", "self-hosted", "experimental"]
+}

@@ -1,0 +1,111 @@
+{
+  "$schema": "provider-schema",
+  "version": "1.0",
+  "description": "Schema definition for provider entries in awesome-free-llm-api",
+
+  "provider_entry": {
+    "type": "object",
+    "required": ["name", "description", "category", "website", "free_tier", "openai_compatible", "notes", "tags"],
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "Display name of the provider",
+        "example": "tken.shop"
+      },
+      "description": {
+        "type": "string",
+        "description": "Brief description of the provider (1-2 sentences)",
+        "example": "OpenAI-compatible API gateway offering daily random free API access."
+      },
+      "category": {
+        "type": "string",
+        "description": "Primary category ID from categories.json",
+        "enum": ["free-tier", "openai-compatible", "self-hosted", "experimental"],
+        "example": "openai-compatible"
+      },
+      "website": {
+        "type": "string",
+        "description": "Official website URL",
+        "format": "uri",
+        "example": "https://tken.shop"
+      },
+      "free_tier": {
+        "type": "string",
+        "description": "Description of free tier offerings",
+        "example": "Daily random free API access"
+      },
+      "openai_compatible": {
+        "type": "boolean",
+        "description": "Whether the API is OpenAI-compatible",
+        "example": true
+      },
+      "notes": {
+        "type": "string",
+        "description": "Additional notes for developers (pros, cons, considerations)",
+        "example": "Great for developers familiar with OpenAI API format."
+      },
+      "tags": {
+        "type": "array",
+        "description": "Array of tag IDs from tags.json",
+        "items": {
+          "type": "string"
+        },
+        "minItems": 1,
+        "example": ["openai-compatible", "daily-free-access", "developer-friendly"]
+      }
+    }
+  },
+
+  "validation_rules": {
+    "name": {
+      "min_length": 1,
+      "max_length": 100,
+      "no_leading_trailing_whitespace": true
+    },
+    "description": {
+      "min_length": 10,
+      "max_length": 500
+    },
+    "website": {
+      "must_be_valid_url": true,
+      "must_start_with_https": false
+    },
+    "free_tier": {
+      "min_length": 1,
+      "max_length": 200
+    },
+    "notes": {
+      "min_length": 1,
+      "max_length": 500
+    },
+    "tags": {
+      "min_items": 1,
+      "max_items": 10,
+      "all_tags_must_exist_in_tags_json": true
+    }
+  },
+
+  "categories": {
+    "free-tier": "Free Tier APIs",
+    "openai-compatible": "OpenAI-Compatible APIs",
+    "self-hosted": "Self-Hosted / Open Source",
+    "experimental": "Experimental / Daily Free Access"
+  },
+
+  "valid_tag_ids": [
+    "free-tier",
+    "openai-compatible",
+    "self-hosted",
+    "open-source",
+    "daily-free-access",
+    "developer-friendly",
+    "prototyping",
+    "testing",
+    "multi-model",
+    "privacy-focused",
+    "scalable",
+    "embeddings",
+    "high-speed",
+    "research"
+  ]
+}

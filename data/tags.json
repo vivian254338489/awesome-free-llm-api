@@ -1,0 +1,90 @@
+{
+  "tags": [
+    {
+      "id": "free-tier",
+      "name": "Free Tier",
+      "description": "Provider offers a legitimate free tier or trial"
+    },
+    {
+      "id": "openai-compatible",
+      "name": "OpenAI-Compatible",
+      "description": "API endpoints are compatible with OpenAI API format"
+    },
+    {
+      "id": "self-hosted",
+      "name": "Self-Hosted",
+      "description": "Can be deployed and run on own infrastructure"
+    },
+    {
+      "id": "open-source",
+      "name": "Open Source",
+      "description": "Models or software are open-source"
+    },
+    {
+      "id": "daily-free-access",
+      "name": "Daily Free Access",
+      "description": "Offers free access on a daily basis (resets periodically)"
+    },
+    {
+      "id": "developer-friendly",
+      "name": "Developer-Friendly",
+      "description": "Good documentation, SDKs, and easy integration"
+    },
+    {
+      "id": "prototyping",
+      "name": "Prototyping",
+      "description": "Suitable for prototyping and development testing"
+    },
+    {
+      "id": "testing",
+      "name": "Testing",
+      "description": "Good for testing and evaluation purposes"
+    },
+    {
+      "id": "multi-model",
+      "name": "Multi-Model",
+      "description": "Supports multiple AI models"
+    },
+    {
+      "id": "privacy-focused",
+      "name": "Privacy-Focused",
+      "description": "Good for privacy-sensitive applications"
+    },
+    {
+      "id": "scalable",
+      "name": "Scalable",
+      "description": "Designed for scaling to production workloads"
+    },
+    {
+      "id": "embeddings",
+      "name": "Embeddings",
+      "description": "Offers embedding models"
+    },
+    {
+      "id": "high-speed",
+      "name": "High Speed",
+      "description": "Known for fast inference or response times"
+    },
+    {
+      "id": "research",
+      "name": "Research",
+      "description": "Suitable for research applications"
+    }
+  ],
+  "tag_ids": [
+    "free-tier",
+    "openai-compatible",
+    "self-hosted",
+    "open-source",
+    "daily-free-access",
+    "developer-friendly",
+    "prototyping",
+    "testing",
+    "multi-model",
+    "privacy-focused",
+    "scalable",
+    "embeddings",
+    "high-speed",
+    "research"
+  ]
+}
