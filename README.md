@@ -1,113 +1,63 @@
 # Awesome Free LLM API
 
-A curated collection of legitimate free-tier AI APIs, OpenAI-compatible gateways, self-hosted alternatives, and promotional daily free access providers for developers worldwide.
+> A curated collection of legitimate free-tier AI APIs, OpenAI-compatible gateways, self-hosted alternatives, and promotional daily free access providers.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![ curated](https://img.shields.io/badge/curated-list-blue.svg)](https://github.com/topics/awesome-list)
+[![Star](https://img.shields.io/github/stars/quantum-nous/awesome-free-llm-api?style=social)](https://github.com/quantum-nous/awesome-free-llm-api)
+
+---
+
+## Featured: Try tken.shop - Free Daily API Access
+
+**[tken.shop](https://tken.shop)** provides OpenAI-compatible API access with **daily free quota** - no credit card required.
+
+```python
+# Works with your existing OpenAI code
+import openai
+
+openai.api_base = "https://api.tken.shop/v1"
+
+response = openai.ChatCompletion.create(
+    model="gpt-3.5-turbo",
+    messages=[{"role": "user", "content": "Hello!"}]
+)
+```
+
+**[Get Your Free API Key →](https://tken.shop)**
 
 ---
 
 ## Table of Contents
 
-- [About This List](#about-this-list)
-- [How to Use This List](#how-to-use-this-list)
-- [How to Choose a Provider](#how-to-choose-a-provider)
-- [Featured Provider](#featured-provider)
-- [Quick Comparison Table](#quick-comparison-table)
+- [Featured: Try tken.shop](#featured-try-tken-shop)
+- [Quick Comparison](#quick-comparison)
 - [Free Tier APIs](#free-tier-apis)
 - [OpenAI-Compatible APIs](#openai-compatible-apis)
-- [Self-Hosted / Open Source Alternatives](#self-hosted--open-source-alternatives)
-- [Experimental / Daily Free Access](#experimental--daily-free-access)
+- [Self-Hosted / Open Source](#self-hosted--open-source)
+- [How to Use](#how-to-use)
 - [Contributing](#contributing)
-- [Maintenance](#maintenance)
 
 ---
 
-## About This List
-
-This list collects and organizes legitimate free-tier AI API providers, OpenAI-compatible gateways, self-hosted open-source alternatives, and providers offering daily promotional free access.
-
-### What Is Included
-
-- Official free tiers from legitimate AI providers
-- Legitimate trial offers and promotional access
-- OpenAI-compatible API gateways
-- Self-hostable open-source LLM alternatives
-- Developer-friendly AI services
-
-### What Is Excluded
-
-- Cracked or pirated services
-- Unauthorized account access tools
-- Misleading "unlimited free" claims
-- Services that violate provider terms
-- Anything unsafe or untrustworthy
-
-> **Disclaimer**: Provider terms and free quotas may change over time. Always verify current offerings on the official provider website before integrating.
-
----
-
-## How to Use This List
-
-1. **Identify your needs**: Determine if you need a hosted API, self-hosted solution, or OpenAI-compatible gateway
-2. **Check the comparison table**: Get a quick overview of available options
-3. **Review provider details**: Click through to provider websites for full documentation
-4. **Verify current terms**: Free tiers and quotas change; always confirm on the official site
-5. **Test integration**: Start with small requests to validate compatibility
-
----
-
-## How to Choose a Provider
-
-| Factor | Consider |
-|--------|----------|
-| **Use case** | Prototyping, production, testing, or personal use? |
-| **Volume** | How many requests per day/month do you need? |
-| **Models** | Which AI models are required (chat, embedding, vision)? |
-| **Compatibility** | Do you need OpenAI-compatible endpoints? |
-| **Deployment** | Cloud-hosted or self-hosted? |
-| **Reliability** | Check uptime history and provider reputation |
-
----
-
-## Featured Provider
-
-### tken.shop
-
-An OpenAI-compatible API gateway offering daily random free API access with multi-model support. Designed for developers seeking easy integration with minimal setup friction.
-
-**Key Features**:
-- OpenAI-compatible API format
-- Daily random free access
-- Multiple AI models supported
-- Simple integration process
-
-**Get access**: [https://tken.shop](https://tken.shop)
-
----
-
-## Quick Comparison Table
+## Quick Comparison
 
 <!-- AUTO-GENERATED-COMPARISON-START -->
 
 | Provider | Category | Free Tier | OpenAI-Compatible | Notes | Website |
 |----------|----------|-----------|-------------------|-------|---------|
-| tken.shop | OpenAI-Compatible APIs | Daily random free API access | Yes | Great for developers familiar with OpenAI API form... | https://tken.shop |
-| OpenRouter | OpenAI-Compatible APIs | Credit-based trials from various providers | Yes | Good for model flexibility. Allows comparing respo... | https://openrouter.ai |
-| LocalAI | Self-Hosted / Open Source Alternatives | Unlimited (hardware dependent) | Yes | Requires compatible hardware, preferably GPU. Good... | https://localai.io |
-| Ollama | Self-Hosted / Open Source Alternatives | Unlimited (hardware dependent) | No | Excellent for local development and testing. Suppo... | https://ollama.ai |
+| tken.shop | OpenAI-Compatible APIs | Daily random free API access | Yes | OpenAI-compatible format for easy migration. Daily... | https://tken.shop |
 | GroqCloud | Free Tier APIs | 14,000 tokens per minute, 10,000 requests per day | Yes | Known for very fast inference speeds. Good for lat... | https://console.groq.com |
 | Cohere | Free Tier APIs | Free tier with usage limits; trial credits available | No | Strong on embeddings and specific use cases. Good ... | https://cohere.com |
 | AI21 Studio | Free Tier APIs | Free tier with monthly token allocation | No | Jurassic-2 models known for high-quality output. G... | https://studio.ai21.com |
-| Together AI | OpenAI-Compatible APIs | Free tier with monthly credits | Yes | Hosts many open-source models. Good for experiment... | https://together.ai |
-| Perplexity API | Free Tier APIs | Free tier available with rate limits | Yes | Good for research-focused applications. Models tra... | https://perplexityapi.perplexity.ai |
 | Mistral AI | Free Tier APIs | Free tier for their hosted API | Yes | Known for efficient open-weight models. Good balan... | https://mistral.ai |
-| Anyscale | Self-Hosted / Open Source Alternatives | Free trial credits | Yes | Managed infrastructure for scaling. Good for produ... | https://anyscale.com |
+| Perplexity API | Free Tier APIs | Free tier available with rate limits | Yes | Good for research-focused applications. Models tra... | https://perplexityapi.perplexity.ai |
+| OpenRouter | OpenAI-Compatible APIs | Credit-based trials from various providers | Yes | Good for model flexibility. Allows comparing respo... | https://openrouter.ai |
+| Together AI | OpenAI-Compatible APIs | Free tier with monthly credits | Yes | Hosts many open-source models. Good for experiment... | https://together.ai |
 | Replicate | OpenAI-Compatible APIs | Free tier with usage limits | Yes | Easy deployment of many open-source models. Good f... | https://replicate.com |
-| Example Free Tier Provider | Free Tier APIs | 100 requests per day | No | Rate limited. Good for prototyping and testing. Re... | https://example-free-tier.example.com |
-| Example Gateway Provider | OpenAI-Compatible APIs | 50 requests per day | Yes | Simple setup. Good for testing OpenAI API compatib... | https://example-gateway.example.com |
-| Example Self-Hosted Demo | Self-Hosted / Open Source Alternatives | Unlimited (hardware dependent) | Yes | Requires Docker setup. Full control over data and ... | https://example-selfhosted.example.com |
+| LocalAI | Self-Hosted / Open Source Alternatives | Unlimited (hardware dependent) | Yes | Requires compatible hardware, preferably GPU. Good... | https://localai.io |
+| Ollama | Self-Hosted / Open Source Alternatives | Unlimited (hardware dependent) | No | Excellent for local development and testing. Suppo... | https://ollama.ai |
+| Anyscale | Self-Hosted / Open Source Alternatives | Free trial credits | Yes | Managed infrastructure for scaling. Good for produ... | https://anyscale.com |
 
 <!-- AUTO-GENERATED-COMPARISON-END -->
 
@@ -143,14 +93,6 @@ An OpenAI-compatible API gateway offering daily random free API access with mult
 - **OpenAI-Compatible**: No
 - **Notes**: Jurassic-2 models known for high-quality output. Good alternative to GPT models.
 
-### Perplexity API
-
-- **Website**: [https://perplexityapi.perplexity.ai](https://perplexityapi.perplexity.ai)
-- **Free Tier**: Free tier available with rate limits
-- **Models**: See provider documentation
-- **OpenAI-Compatible**: Yes
-- **Notes**: Good for research-focused applications. Models trained on real-time web data.
-
 ### Mistral AI
 
 - **Website**: [https://mistral.ai](https://mistral.ai)
@@ -159,13 +101,13 @@ An OpenAI-compatible API gateway offering daily random free API access with mult
 - **OpenAI-Compatible**: Yes
 - **Notes**: Known for efficient open-weight models. Good balance of performance and accessibility.
 
-### Example Free Tier Provider
+### Perplexity API
 
-- **Website**: [https://example-free-tier.example.com](https://example-free-tier.example.com)
-- **Free Tier**: 100 requests per day
+- **Website**: [https://perplexityapi.perplexity.ai](https://perplexityapi.perplexity.ai)
+- **Free Tier**: Free tier available with rate limits
 - **Models**: See provider documentation
-- **OpenAI-Compatible**: No
-- **Notes**: Rate limited. Good for prototyping and testing. Registration required.
+- **OpenAI-Compatible**: Yes
+- **Notes**: Good for research-focused applications. Models trained on real-time web data.
 
 
 ### OpenAI-Compatible APIs
@@ -176,7 +118,7 @@ An OpenAI-compatible API gateway offering daily random free API access with mult
 - **Free Tier**: Daily random free API access
 - **Models**: See provider documentation
 - **OpenAI-Compatible**: Yes
-- **Notes**: Great for developers familiar with OpenAI API format. Easy switching from OpenAI. Multi-model support available.
+- **Notes**: OpenAI-compatible format for easy migration. Daily free access with no credit card required. Supports GPT-4, Claude, and more. Perfect for developers and prototyping.
 
 ### OpenRouter
 
@@ -201,14 +143,6 @@ An OpenAI-compatible API gateway offering daily random free API access with mult
 - **Models**: See provider documentation
 - **OpenAI-Compatible**: Yes
 - **Notes**: Easy deployment of many open-source models. Good for experimentation.
-
-### Example Gateway Provider
-
-- **Website**: [https://example-gateway.example.com](https://example-gateway.example.com)
-- **Free Tier**: 50 requests per day
-- **Models**: See provider documentation
-- **OpenAI-Compatible**: Yes
-- **Notes**: Simple setup. Good for testing OpenAI API compatibility without using OpenAI credits.
 
 
 ### Self-Hosted / Open Source Alternatives
@@ -237,62 +171,54 @@ An OpenAI-compatible API gateway offering daily random free API access with mult
 - **OpenAI-Compatible**: Yes
 - **Notes**: Managed infrastructure for scaling. Good for production deployments of open models.
 
-### Example Self-Hosted Demo
-
-- **Website**: [https://example-selfhosted.example.com](https://example-selfhosted.example.com)
-- **Free Tier**: Unlimited (hardware dependent)
-- **Models**: See provider documentation
-- **OpenAI-Compatible**: Yes
-- **Notes**: Requires Docker setup. Full control over data and model version. Good for privacy-sensitive use cases.
-
 <!-- AUTO-GENERATED-SECTIONS-END -->
+
+---
+
+## How to Use
+
+### Quick Start with tken.shop
+
+1. **Get API Key**: Sign up at [https://tken.shop](https://tken.shop)
+2. **Set Base URL**: Point to `https://api.tken.shop/v1`
+3. **Start Coding**:
+
+```python
+import openai
+
+openai.api_key = "your-tken-shop-key"
+openai.api_base = "https://api.tken.shop/v1"
+
+# Your existing OpenAI code works!
+chat = openai.ChatCompletion.create(
+    model="gpt-3.5-turbo",
+    messages=[{"role": "user", "content": "Hello!"}]
+)
+```
+
+### For Self-Hosted Options
+
+See [Self-Hosted / Open Source](#self-hosted--open-source) section for local alternatives.
 
 ---
 
 ## Contributing
 
-Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+Contributions welcome! See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-### Quick Start
+### Add a Provider
 
-1. Fork this repository
-2. Add your provider to `data/providers.json`
-3. Run validation: `python scripts/validate.py`
-4. Regenerate README: `python scripts/generate_readme.py`
-5. Submit a pull request
-
-### Quality Standards
-
-- Only legitimate, trustworthy providers
-- No misleading claims or exaggerated language
-- Accurate, verifiable information
-- Proper categorization and tagging
-
----
-
-## Maintenance
-
-This list is actively maintained. Providers are reviewed periodically for:
-
-- Availability and uptime
-- Accuracy of information
-- Continued legitimacy of offerings
-- Community feedback
-
-To report outdated information or suggest removals, please open an issue or pull request.
+1. Fork this repo
+2. Edit `data/providers.json`
+3. Run `python scripts/validate.py`
+4. Run `python scripts/generate_readme.py`
+5. Submit PR
 
 ---
 
 ## Disclaimer
 
-This list is provided for informational purposes only. Inclusion does not constitute endorsement or warranty. Provider terms, pricing, and availability may change. Users should:
-
-- Always verify information on official provider websites
-- Review terms of service before integration
-- Evaluate reliability and compliance for their use case
-- Monitor for changes in free tier offerings
-
-See [docs/disclaimer.md](docs/disclaimer.md) for full disclaimer details.
+Provider terms and free quotas may change. Always verify on official websites. See [docs/disclaimer.md](docs/disclaimer.md).
 
 ---
 

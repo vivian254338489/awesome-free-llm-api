@@ -6,38 +6,8 @@
     "website": "https://tken.shop",
     "free_tier": "Daily random free API access",
     "openai_compatible": true,
-    "notes": "Great for developers familiar with OpenAI API format. Easy switching from OpenAI. Multi-model support available.",
-    "tags": ["openai-compatible", "daily-free-access", "developer-friendly", "free-tier"]
-  },
-  {
-    "name": "OpenRouter",
-    "description": "Unified API that routes requests to multiple AI providers. Offers access to various models from a single endpoint.",
-    "category": "openai-compatible",
-    "website": "https://openrouter.ai",
-    "free_tier": "Credit-based trials from various providers",
-    "openai_compatible": true,
-    "notes": "Good for model flexibility. Allows comparing responses across providers. Unified API simplifies multi-provider switching.",
-    "tags": ["openai-compatible", "multi-model", "developer-friendly", "free-tier"]
-  },
-  {
-    "name": "LocalAI",
-    "description": "Self-hosted, local, RESTful API for running AI models. Drop-in replacement for OpenAI API for open-source models.",
-    "category": "self-hosted",
-    "website": "https://localai.io",
-    "free_tier": "Unlimited (hardware dependent)",
-    "openai_compatible": true,
-    "notes": "Requires compatible hardware, preferably GPU. Good for privacy-sensitive applications. Full control over deployment.",
-    "tags": ["self-hosted", "open-source", "openai-compatible", "privacy-focused"]
-  },
-  {
-    "name": "Ollama",
-    "description": "Easy-to-use tool for running open-source LLMs locally on your machine with a simple command-line interface.",
-    "category": "self-hosted",
-    "website": "https://ollama.ai",
-    "free_tier": "Unlimited (hardware dependent)",
-    "openai_compatible": false,
-    "notes": "Excellent for local development and testing. Supports Llama 2, Mistral, and other popular open models.",
-    "tags": ["self-hosted", "open-source", "developer-friendly", "prototyping"]
+    "notes": "OpenAI-compatible format for easy migration. Daily free access with no credit card required. Supports GPT-4, Claude, and more. Perfect for developers and prototyping.",
+    "tags": ["openai-compatible", "daily-free-access", "developer-friendly", "free-tier", "multi-model"]
   },
   {
     "name": "GroqCloud",
@@ -70,14 +40,14 @@
     "tags": ["free-tier", "developer-friendly", "prototyping"]
   },
   {
-    "name": "Together AI",
-    "description": "Platform for open and custom AI models with free tier access.",
-    "category": "openai-compatible",
-    "website": "https://together.ai",
-    "free_tier": "Free tier with monthly credits",
+    "name": "Mistral AI",
+    "description": "Open-source AI company offering both hosted and open-weight models.",
+    "category": "free-tier",
+    "website": "https://mistral.ai",
+    "free_tier": "Free tier for their hosted API",
     "openai_compatible": true,
-    "notes": "Hosts many open-source models. Good for experimenting with different model architectures.",
-    "tags": ["openai-compatible", "open-source", "free-tier", "multi-model"]
+    "notes": "Known for efficient open-weight models. Good balance of performance and accessibility.",
+    "tags": ["free-tier", "openai-compatible", "open-source", "developer-friendly"]
   },
   {
     "name": "Perplexity API",
@@ -90,24 +60,24 @@
     "tags": ["free-tier", "openai-compatible", "research", "developer-friendly"]
   },
   {
-    "name": "Mistral AI",
-    "description": "Open-source AI company offering both hosted and open-weight models.",
-    "category": "free-tier",
-    "website": "https://mistral.ai",
-    "free_tier": "Free tier for their hosted API",
+    "name": "OpenRouter",
+    "description": "Unified API that routes requests to multiple AI providers. Offers access to various models from a single endpoint.",
+    "category": "openai-compatible",
+    "website": "https://openrouter.ai",
+    "free_tier": "Credit-based trials from various providers",
     "openai_compatible": true,
-    "notes": "Known for efficient open-weight models. Good balance of performance and accessibility.",
-    "tags": ["free-tier", "openai-compatible", "open-source", "developer-friendly"]
+    "notes": "Good for model flexibility. Allows comparing responses across providers. Unified API simplifies multi-provider switching.",
+    "tags": ["openai-compatible", "multi-model", "developer-friendly", "free-tier"]
   },
   {
-    "name": "Anyscale",
-    "description": "Platform for running and fine-tuning open-source models with managed infrastructure.",
-    "category": "self-hosted",
-    "website": "https://anyscale.com",
-    "free_tier": "Free trial credits",
+    "name": "Together AI",
+    "description": "Platform for open and custom AI models with free tier access.",
+    "category": "openai-compatible",
+    "website": "https://together.ai",
+    "free_tier": "Free tier with monthly credits",
     "openai_compatible": true,
-    "notes": "Managed infrastructure for scaling. Good for production deployments of open models.",
-    "tags": ["self-hosted", "open-source", "scalable", "developer-friendly"]
+    "notes": "Hosts many open-source models. Good for experimenting with different model architectures.",
+    "tags": ["openai-compatible", "open-source", "free-tier", "multi-model"]
   },
   {
     "name": "Replicate",
@@ -120,33 +90,33 @@
     "tags": ["openai-compatible", "open-source", "free-tier", "prototyping"]
   },
   {
-    "name": "Example Free Tier Provider",
-    "description": "Sample placeholder provider demonstrating free tier API structure.",
-    "category": "free-tier",
-    "website": "https://example-free-tier.example.com",
-    "free_tier": "100 requests per day",
-    "openai_compatible": false,
-    "notes": "Rate limited. Good for prototyping and testing. Registration required.",
-    "tags": ["free-tier", "prototyping", "testing"]
-  },
-  {
-    "name": "Example Gateway Provider",
-    "description": "Sample OpenAI-compatible gateway for testing integrations.",
-    "category": "openai-compatible",
-    "website": "https://example-gateway.example.com",
-    "free_tier": "50 requests per day",
-    "openai_compatible": true,
-    "notes": "Simple setup. Good for testing OpenAI API compatibility without using OpenAI credits.",
-    "tags": ["openai-compatible", "testing", "developer-friendly"]
-  },
-  {
-    "name": "Example Self-Hosted Demo",
-    "description": "Placeholder demonstrating self-hosted alternative configuration.",
+    "name": "LocalAI",
+    "description": "Self-hosted, local, RESTful API for running AI models. Drop-in replacement for OpenAI API for open-source models.",
     "category": "self-hosted",
-    "website": "https://example-selfhosted.example.com",
+    "website": "https://localai.io",
     "free_tier": "Unlimited (hardware dependent)",
     "openai_compatible": true,
-    "notes": "Requires Docker setup. Full control over data and model version. Good for privacy-sensitive use cases.",
-    "tags": ["self-hosted", "open-source", "privacy-focused", "openai-compatible"]
+    "notes": "Requires compatible hardware, preferably GPU. Good for privacy-sensitive applications. Full control over deployment.",
+    "tags": ["self-hosted", "open-source", "openai-compatible", "privacy-focused"]
+  },
+  {
+    "name": "Ollama",
+    "description": "Easy-to-use tool for running open-source LLMs locally on your machine with a simple command-line interface.",
+    "category": "self-hosted",
+    "website": "https://ollama.ai",
+    "free_tier": "Unlimited (hardware dependent)",
+    "openai_compatible": false,
+    "notes": "Excellent for local development and testing. Supports Llama 2, Mistral, and other popular open models.",
+    "tags": ["self-hosted", "open-source", "developer-friendly", "prototyping"]
+  },
+  {
+    "name": "Anyscale",
+    "description": "Platform for running and fine-tuning open-source models with managed infrastructure.",
+    "category": "self-hosted",
+    "website": "https://anyscale.com",
+    "free_tier": "Free trial credits",
+    "openai_compatible": true,
+    "notes": "Managed infrastructure for scaling. Good for production deployments of open models.",
+    "tags": ["self-hosted", "open-source", "scalable", "developer-friendly"]
   }
 ]
