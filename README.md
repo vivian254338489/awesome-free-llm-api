@@ -202,6 +202,16 @@ See [Self-Hosted / Open Source](#self-hosted--open-source) section for local alt
 
 ---
 
+## Related Tools
+
+If you want a practical gateway layer on top of OpenAI-compatible endpoints, also see:
+
+- [free-openai-starter](https://github.com/vivian254338489/free-openai-starter) - multi-account proxy manager with 429 retry, proxy rotation, and model-aware routing
+- [tken-sdk](https://github.com/vivian254338489/tken-sdk) - lightweight TypeScript SDK for OpenAI-compatible APIs
+- [openai-compatible-api-examples](https://github.com/vivian254338489/openai-compatible-api-examples) - minimal runnable examples across languages
+
+---
+
 ## Contributing
 
 Contributions welcome! See [CONTRIBUTING.md](CONTRIBUTING.md).
